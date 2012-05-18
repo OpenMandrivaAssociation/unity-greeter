@@ -27,7 +27,7 @@ A LightDM greeter for the Unity Desktop Environment.
 %configure2_5x \
 	--disable-static
 
-%make LIBS='-lX11'
+%make LIBS='-lX11 -lm'
 
 %install
 rm -rf %{buildroot}
