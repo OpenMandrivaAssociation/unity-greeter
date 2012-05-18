@@ -1,6 +1,6 @@
 Summary:	LightDM Unity Greeter
 Name:		unity-greeter
-Version:	0.1.1
+Version:	0.2.8
 Release:	1
 Group:		System/X11
 License:	GPLv3
