@@ -11,6 +11,8 @@ BuildRequires:	intltool
 BuildRequires:	pkgconfig(liblightdm-gobject-1)
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	pkgconfig(indicator3-0.4)
+BuildRequires:	vala
+BuildRequires:	vala-devel
 
 Provides: lightdm-greeter
 
