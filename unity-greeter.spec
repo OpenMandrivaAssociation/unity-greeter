@@ -32,9 +32,10 @@ A LightDM greeter for the Unity Desktop Environment.
 %install
 rm -rf %{buildroot}
 %makeinstall_std
+%find_lang %{name}
 
-%files
+%files -f %{name}.lang
 %{_sbindir}/unity-greeter
 %{_datadir}/unity-greeter
 %{_datadir}/xgreeters/unity-greeter.desktop
-
+%{_datadir}/glib-2.0/schemas/*.gschema.xml
