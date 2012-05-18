@@ -34,7 +34,6 @@ rm -rf %{buildroot}
 %makeinstall_std
 
 %files
-%config(noreplace) %{_sysconfdir}/lightdm/unity-greeter.conf
 %{_sbindir}/unity-greeter
 %{_datadir}/unity-greeter
 %{_datadir}/xgreeters/unity-greeter.desktop
