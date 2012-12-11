@@ -39,3 +39,14 @@ rm -rf %{buildroot}
 %{_datadir}/unity-greeter
 %{_datadir}/xgreeters/unity-greeter.desktop
 %{_datadir}/glib-2.0/schemas/*.gschema.xml
+
+
+%changelog
+* Fri May 18 2012 Crispin Boylan <crisb@mandriva.org> 0.2.8-1
++ Revision: 799538
+- New release
+
+* Fri Mar 02 2012 Matthew Dawkins <mattydaw@mandriva.org> 0.1.1-1
++ Revision: 781832
+- imported package unity-greeter
+
