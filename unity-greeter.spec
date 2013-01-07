@@ -1,6 +1,6 @@
 Summary:	LightDM Unity Greeter
 Name:		unity-greeter
-Version:	0.2.8
+Version:	0.2.9
 Release:	1
 Group:		System/X11
 License:	GPLv3
@@ -24,13 +24,11 @@ A LightDM greeter for the Unity Desktop Environment.
 %setup -q
 
 %build
-%configure2_5x \
-	--disable-static
+%configure2_5x
 
 %make LIBS='-lX11 -lm'
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 %find_lang %{name}
 
@@ -39,14 +37,4 @@ rm -rf %{buildroot}
 %{_datadir}/unity-greeter
 %{_datadir}/xgreeters/unity-greeter.desktop
 %{_datadir}/glib-2.0/schemas/*.gschema.xml
-
-
-%changelog
-* Fri May 18 2012 Crispin Boylan <crisb@mandriva.org> 0.2.8-1
-+ Revision: 799538
-- New release
-
-* Fri Mar 02 2012 Matthew Dawkins <mattydaw@mandriva.org> 0.1.1-1
-+ Revision: 781832
-- imported package unity-greeter
 
