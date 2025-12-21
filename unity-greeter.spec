@@ -7,6 +7,11 @@ License:	GPLv3
 URL:		https://launchpad.net/unity-greeter
 Source0:	https://launchpad.net/unity-greeter/+download/%{name}-%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(liblightdm-gobject-1)
 BuildRequires:	pkgconfig(gtk+-3.0)
